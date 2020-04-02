@@ -18,7 +18,7 @@ DUPEFILTER_CLASS = 'scrapy_redis.dupefilter.RFPDupeFilter'
 SCHEDULER = 'scrapy_redis.scheduler.Scheduler'
 SCHEDULER_PERSIST = True
 
-# LOG_LEVEL = 'WARNING'
+LOG_LEVEL = 'DEBUG'
 
 REDIS_URL = "redis://127.0.0.1:6379/9"
 

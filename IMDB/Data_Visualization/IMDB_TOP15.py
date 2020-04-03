@@ -1,15 +1,8 @@
-from pymongo import MongoClient
+from get_data import data
 import numpy as np
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
-
-# 对IMDB TOP RATED 250进行统计
-
-# 准备数据
-client = MongoClient()
-collections = client['IMDB']['movie250']
-data = collections.find()
 
 # 绘制排名前15的电影的评分的条形图
 

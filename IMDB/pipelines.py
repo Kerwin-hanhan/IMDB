@@ -14,7 +14,7 @@ class ImdbPipeline(object):
     def open_spider(self, spider):
         # 实例化client
         self.client = MongoClient()
-        self.collections = self.client['IMDB']['movie']
+        self.collections = self.client['IMDB']['movie250']
 
     def colse_spider(self, spider):
         self.client.close()
